@@ -4,21 +4,13 @@
     </head>
 
     <body>
-        <div>
-            <h1><a href="/">Sumie's Blog</a></h1>
-        </div>
-
-        <div>
-            <p>published: 2021.05.05</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Hello!</p>
-        </div>
-
-        <div>
-            <p>published: 2021.05.05</p>
-            <h2><a href="">Second post</a></h2>
-            <p>What's up!?</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.pubulished_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 
 </html>
