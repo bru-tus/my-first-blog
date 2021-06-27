@@ -10,7 +10,7 @@ body {
 .page-header {
     background-color: #FF9200;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 50px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -27,8 +27,13 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
+.edit {
+    float: right;
+}
+
 .date {
     color: #828282;
+    float: right;
 }
 
 .save {
@@ -53,3 +58,4 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
+
